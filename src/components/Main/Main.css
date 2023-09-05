@@ -1,0 +1,13 @@
+.Mainp{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  
+}
+
+.contenedorimg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}

@@ -1,0 +1,13 @@
+.Parrafo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+}
+
+.iconos{
+  width: 30px;
+  height: 30px;
+
+}
