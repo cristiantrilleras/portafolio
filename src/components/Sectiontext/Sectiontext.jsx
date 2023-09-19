@@ -2,12 +2,12 @@ import React from "react";
 import "./Parrafo.css";
 import { Navbar } from "../Navbar/Navbar";
 
-export const Sectiontext = ({ name }) => {
+export const Sectiontext = () => {
   return (
     <div className="Parrafo">
       <h3>HELLO ITS ME</h3>
-      <h2>{(name = "Cristian David Trilleras")}</h2>
-      <h2>{(name = "and I'm a FrontEnd ")}</h2>
+      <h2> Cristian David Trilleras</h2>
+      <h2> and I'm a FrontEnd</h2>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi molestiae
         sit ipsum saepe asperiores fuga natus voluptatem mollitia, et officiis
