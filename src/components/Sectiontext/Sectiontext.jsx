@@ -23,3 +23,5 @@ export const Sectiontext = () => {
     </div>
   );
 };
+
+export default Sectiontext;
