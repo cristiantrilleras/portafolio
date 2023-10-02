@@ -8,3 +8,19 @@
     width: 200px;
     height: 200px;
 }
+
+.titulo{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#buscador{
+    border: 2px solid;
+}
+
+.caja{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
