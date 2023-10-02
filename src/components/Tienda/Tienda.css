@@ -1,0 +1,10 @@
+.tienda{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.imgtienda{
+    width: 200px;
+    height: 200px;
+}

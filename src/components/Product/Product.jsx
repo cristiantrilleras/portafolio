@@ -5,7 +5,7 @@ const img1="https://t4.ftcdn.net/jpg/05/72/82/85/360_F_572828530_ofzCYowQVnlOwkc
 export const Product = () => {
   return (
     <div className='w-96 h-96 bg-slate-600 flex flex-col items-center content-between text-white border-double border-8 shadow-lg shadow-cyan-500/50  '>
-      <img src={img1} alt="Tiger" className/>
+      <img src={img1} alt="Tiger"/>
       <h2 className='m-3  font-bold text-3xl text-center'>Category</h2>
       <div>
         <p className='text-center font-medium text-sky-300 mb-3'>Lion Card</p>
