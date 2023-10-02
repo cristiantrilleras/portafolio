@@ -4,15 +4,17 @@ import './Tienda.css'
 
 export const Tienda = () => {
   const [products, setProducts] = useState([])
+  function fetching () {
 
-
-  useEffect(function () {
-    fetch("https://fakestoreapi.com/products").then((res) => {
+    fetch("https://fakestoreapi.com/products?sort=desc").then((res) => {
       return res.json()
     }
     ).then((data) => {
       setProducts(data)
     })
+  }
+  useEffect(function () {
+    fetching()
   }, [])
   return (
     <div>
@@ -21,8 +23,12 @@ export const Tienda = () => {
       <br />
 
     <div className='caja'>
-      <button onClick={() => { setProducts(products.filter((el) => el.title.includes(document.getElementById("buscador").value))) }}>buscar articulo por nombre: </button>
-      <input type="text" id='buscador' />
+      <input onKeyDown={(ev) => {
+        if (ev.keyCode ==13 )
+        setProducts(products.filter((el) => el.title.toLowerCase().includes(document.getElementById("buscador").value)))
+      }} onChange={(ev) => {
+        if(ev.target.value == "") (fetching())
+      }} type="text" id='buscador' />
       </div>
       <br />
       <br />
